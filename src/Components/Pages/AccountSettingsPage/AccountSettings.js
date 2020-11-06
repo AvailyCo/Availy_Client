@@ -35,7 +35,8 @@ export class AccountSettings extends Component {
 
     render() {
         return (
-            <div id="accountSettings">
+        <div id="accountSettings">
+        <div id="accountSettingsform">
         <section className="accountSettingSection" id="accountSettingHeader">
             <div className="accountSettingUserPic">
                 <img id="userPic" src={userPic}></img>
@@ -44,7 +45,7 @@ export class AccountSettings extends Component {
             </div>
             <h1 id="userFullName">Jane Doe</h1>
         </section>
-        <section className="accountSettingSection">
+        <section className="accountSettingSection" id="yourAccountHeader">
             <h3>Your account</h3>
         </section>
         <section className="accountSettingSection" id="accountSettingName">
@@ -78,7 +79,7 @@ export class AccountSettings extends Component {
         <section className="accountSettingSection" id="accountSettingDelete">
             <button className="deleteAccountButton">Delete Account</button>
         </section>
-    </div>
+    </div></div>
         )
     }
 

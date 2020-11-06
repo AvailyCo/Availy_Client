@@ -1,17 +1,33 @@
 * {
     font-family: arimo, sans-serif;
 }
+#accountSettings {
+    padding: 50px 20px 50px 20px;
+    background-image: linear-gradient(to bottom, var(--primary-orange),var(--secondary-orange));
+    /* min-height: 100vh; */
+    width: 100%;
+}
+#accountSettingsform {
+    background: white;
+    width: 100%;
+    max-width: 480px;
+    height: 90%;
+    border-radius: 10px;
+    padding: 20px 50px 50px 50px;
+    position: relative;
+}
 
 .accountSettingSection {
-    border: solid gray 1px;
+    border-bottom: solid gray 1px;
     padding-left: 5%;
 }
 
 .editButton {
-    border: none;
+    border: solid 1px #1B9DA7;
+    padding: 10px;
+    border-radius: 5px;
     background-color: white;
-    color: rgb(66, 216, 228
-    );
+    color: #1B9DA7;
     margin: 20px;
 }
 
@@ -31,10 +47,8 @@
 }
 
 .deleteAccountButton {
-    border: solid 1px rgb(66, 216, 228
-    );
-    color: rgb(66, 216, 228
-    );
+    border: solid 1px #1B9DA7;
+    color: #1B9DA7;
     padding: 10px;
     border-radius: 5px;
     margin: 10px;
@@ -50,10 +64,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: none;
 }
 
 #changePic {
-    height: 40px;
+    height: 30px;
 }
 
 #changePicButton {
@@ -78,6 +93,7 @@
 
 .editSetting {
     border: solid gray 1px;
+    border-radius: 5px;
     padding-left: 5%;
     display: flex;
     flex-direction: column;
@@ -88,8 +104,7 @@
 }
 
 .updateButton {
-    background: rgb(66, 216, 228
-    );
+    background: #1B9DA7;
     color: white;
     padding: 5px;
     border-radius: 5px;
@@ -97,9 +112,19 @@
 
 .cancelButton {
     background: white;
-    color: rgb(66, 216, 228
-    ); 
+    color: #1B9DA7; 
     padding: 5px;
     border-radius: 5px;
+    border: solid 1px #1B9DA7;
 }
 
+#yourAccountHeader {
+    padding: 10px;
+    border: none;
+}
+
+.accountSettingLabel {
+   display: block;
+   padding: 10px;
+   font-weight: bold;
+}
