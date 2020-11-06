@@ -22,6 +22,7 @@
 }
 .currentInfo {
     color: gray;
+    align-self: center;
 }
 
 #accountSettingDelete {
