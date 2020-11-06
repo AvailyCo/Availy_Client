@@ -1,0 +1,104 @@
+* {
+    font-family: arimo, sans-serif;
+}
+
+.accountSettingSection {
+    border: solid gray 1px;
+    padding-left: 5%;
+}
+
+.editButton {
+    border: none;
+    background-color: white;
+    color: rgb(66, 216, 228
+    );
+    margin: 20px;
+}
+
+.infoEdit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.currentInfo {
+    color: gray;
+}
+
+#accountSettingDelete {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.deleteAccountButton {
+    border: solid 1px rgb(66, 216, 228
+    );
+    color: rgb(66, 216, 228
+    );
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: white;
+}
+
+#userPic {
+    width: 100px;
+    border-radius: 50%;
+}
+
+#accountSettingHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#changePic {
+    height: 40px;
+}
+
+#changePicButton {
+    border: none;
+    background: transparent;
+    margin-left: -50px;
+}
+
+.accountSettingUserPic {
+    margin: 10px;
+}
+
+#facebookIcon {
+    margin: 10px;
+    height: 40px;
+}
+
+#accountSettingFacebook {
+    display: flex;
+    flex-direction: row;
+}
+
+.editSetting {
+    border: solid gray 1px;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputLabel {
+    display: block;
+}
+
+.updateButton {
+    background: rgb(66, 216, 228
+    );
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cancelButton {
+    background: white;
+    color: rgb(66, 216, 228
+    ); 
+    padding: 5px;
+    border-radius: 5px;
+}
+
