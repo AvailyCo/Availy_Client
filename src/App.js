@@ -17,12 +17,14 @@ import ContactUsPage from './Components/Pages/ContactUsPage/ContactUsPage';
 import PrivacyPolicyPage from './Components/Pages/PrivacyPolicyPage/PrivacyPolicyPage.js';
 import TermsConditionsPage from './Components/Pages/TermsConditionsPage/TermsConditionsPage';
 import NotFoundPage from './Components/Pages/NotFoundPage/NotFoundPage';
+import DashboardPage from './Components/Pages/DashboardPage/DashboardPage';
 
 export class App extends Component {
   state = {
     hero: {},
     landingDetails: [],
     successStories: [],
+    activeDashPage: "",
   }
 
   componentDidMount() {
@@ -42,11 +44,19 @@ export class App extends Component {
     });
   }
 
+  setActiveDashPage = (activeDashPage) => {
+    this.setState({
+      activeDashPage
+    });
+  }
+
   render () {
     const contextValue = {
       hero: this.state.hero,
       landingDetails: this.state.landingDetails,
-      successStories: this.state.successStories
+      successStories: this.state.successStories,
+      activeDashPage: this.state.activeDashPage,
+      setActiveDashPage: this.setActiveDashPage,
     }
     return (
       <Context.Provider
@@ -56,6 +66,11 @@ export class App extends Component {
           <NavBar />
 
           <Switch id="content">
+            <Route  // <-- change to private route when auth set up
+              exact
+              path="/dashboard"
+              component={ DashboardPage }
+            />
             <PublicOnlyRoute
               path='/login'
               component={ LoginPage }
@@ -67,17 +82,17 @@ export class App extends Component {
             <Route 
               exact
               path="/contact"
-              comoponent={ ContactUsPage }
+              component={ ContactUsPage }
             />
             <Route 
               exact
               path="/privacy"
-              comoponent={ PrivacyPolicyPage }
+              component={ PrivacyPolicyPage }
             />
             <Route 
               exact
               path="/terms"
-              comoponent={ TermsConditionsPage }
+              component={ TermsConditionsPage }
             />
             <Route
               exact

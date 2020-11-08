@@ -5,9 +5,9 @@ import './PrivacyPolicyPage.css';
 export class PrivacyPolicyPage extends Component {
   render() {
     return (
-      <div>
+      <content id="privacyPage">
         Privacy Policy
-      </div>
+      </content>
     )
   }
 }

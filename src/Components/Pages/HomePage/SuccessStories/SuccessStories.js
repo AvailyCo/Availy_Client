@@ -26,6 +26,7 @@ export class SuccessStories extends Component {
             )
           })}
         </ul>
+        
         {/* <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
           <defs>
             <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%"> 

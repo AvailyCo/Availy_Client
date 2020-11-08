@@ -4,6 +4,8 @@ const Context = React.createContext({
   hero: {},
   landingDetails: [],
   successStories: [],
+  activeDashPage: "",
+  setActiveDashPage: () => {},
 })
 
 export default Context;

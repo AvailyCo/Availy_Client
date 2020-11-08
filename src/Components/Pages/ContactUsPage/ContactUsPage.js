@@ -5,9 +5,9 @@ import './ContactUsPage.css'
 export class ContactUsPage extends Component {
   render() {
     return (
-      <div>
+      <content id="contactPage">
         Contact Us Page
-      </div>
+      </content>
     )
   }
 }

@@ -34,6 +34,9 @@ export class LoginPage extends Component {
             <hr />
             <button className="fbButton">Continue with Facebook</button>
             <button className="googButton">Continue with Google</button>
+            <Link to="/dashboard">
+              <button id="testButton">Test User Page</button>
+            </Link>
           </div>
           <p className="altAcct">No account yet? <Link to="/signup">Sign Up!</Link></p>
         </form>

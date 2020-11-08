@@ -41,7 +41,7 @@ export class SignUpPage extends Component {
         </div>
 
         <div className="formButtons">
-          <button>Login</button>
+          <button>Create Account</button>
           <hr />
           <button className="fbButton">Continue with Facebook</button>
           <button className="googButton">Continue with Google</button>

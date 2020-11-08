@@ -5,9 +5,9 @@ import './TermsConditionsPage.css';
 export class TermsConditionsPage extends Component {
   render() {
     return (
-      <div>
+      <content id="termsPage">
         Terms & Conditions Page
-      </div>
+      </content>
     )
   }
 }

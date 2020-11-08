@@ -1,0 +1,93 @@
+#dashNav {
+  border-radius: 5px;
+  background: white; 
+  padding: 20px;
+}
+
+#dashNav h3 {
+  font-family: 'Pacifico', cursive;
+  font-weight: lighter;
+  font-size: 1.5em;
+  color: var(--basic-black);
+  margin-bottom: 20px;
+}
+
+#newMeetingBtn {
+  background: var(--dark-orange);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 100%;
+}
+#newMeetingBtn:hover {
+  cursor: pointer;
+  background: var(--primary-orange);
+}
+
+#dashOptions {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#dashOptions select {
+  height: 30px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+#dashOptions select:nth-child(1) {
+  margin-left: 0;
+  flex: 2;
+}
+#dashOptions select:last-child {
+  margin-right: 0;
+  flex: 1;
+}
+
+#searchBar input {
+  width: calc(100% - 30px);
+  border: 2px solid #ddd;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+}
+#searchBar button {
+  width: 30px;
+  height: 30px;
+  background: #ddd;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+
+
+
+@media only screen and (min-width: 720px){
+  #dashNav{
+    box-shadow: none;
+    max-height: 350px;
+  }
+
+  #dashNav #sideNavMenu {
+    padding: 0;
+  }
+  #sideNavMenu li {
+    list-style-type: none;
+  }
+
+  .sideNavButton {
+    background: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 5px;
+  }
+  .sideNavButton:hover {
+    cursor: pointer;
+    background: var(--dark-blue);
+    color: white;
+  }
+  .sideNavButton::selection {
+    background: var(--dark-blue);
+  }
+}

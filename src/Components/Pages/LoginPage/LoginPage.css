@@ -84,3 +84,18 @@
   color: var(--dark-blue);
   font-weight: bold;
 }
+
+#testButton {
+  width: 100%;
+  padding: 10px;
+  margin: 5px auto;
+  background: #ddd;
+  color: #aaa;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+#testButton:hover {
+  background: #aaa;
+  color: white;
+}
