@@ -15,18 +15,18 @@ export class LandingDetails extends Component {
     const info = this.props.info;
 
     return (
-      <section id={"step" + info.id} class="landingDetails">
-        <div class="textSegment">
-          <h3 class="text-seg-header">
+      <section id={"step" + info.id} className="landingDetails">
+        <div className="textSegment">
+          <h3 className="text-seg-header">
             {info.header}
           </h3>
-          <p class="text-seg-info">
+          <p className="text-seg-info">
             {info.details}
           </p>
         </div>
         <img
           src={info.imgURL}
-          class="landingImg"
+          className="landingImg"
         />
       </section>
     )

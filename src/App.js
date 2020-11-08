@@ -23,6 +23,7 @@ import DashboardPage from './Components/Pages/DashboardPage/DashboardPage';
 export class App extends Component {
   state = {
     hero: {},
+    loggedIn: false,
     landingDetails: [],
     successStories: [],
     activeDashPage: "",
@@ -45,6 +46,12 @@ export class App extends Component {
     });
   }
 
+  login = () => {
+    this.setState({
+      loggedIn: !this.state.loggedIn
+    });
+  }
+
   setActiveDashPage = (activeDashPage) => {
     this.setState({
       activeDashPage
@@ -54,6 +61,8 @@ export class App extends Component {
   render () {
     const contextValue = {
       hero: this.state.hero,
+      loggedIn: this.state.loggedIn,
+      login: this.login,
       landingDetails: this.state.landingDetails,
       successStories: this.state.successStories,
       activeDashPage: this.state.activeDashPage,

@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import './LoginPage.css';
+import Context from '../../../Context';
 
 export class LoginPage extends Component {
+  static contextType = Context;
+
   render() {
     return (
       <div id="logInContent">
@@ -34,8 +37,12 @@ export class LoginPage extends Component {
             <hr />
             <button className="fbButton">Continue with Facebook</button>
             <button className="googButton">Continue with Google</button>
-            <Link to="/dashboard">
-              <button id="testButton">Test User Page</button>
+            <Link to="/dashboard"
+              onClick={() => this.context.login()}
+            >
+              <button id="testButton">
+                Test User Page
+              </button>
             </Link>
           </div>
           <p className="altAcct">No account yet? <Link to="/signup">Sign Up!</Link></p>
