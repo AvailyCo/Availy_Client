@@ -12,6 +12,7 @@ import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/Footer';
 import HomePage from './Components/Pages/HomePage/HomePage';
 import LoginPage from './Components/Pages/LoginPage/LoginPage';
+import AccountSettings from './Components/Pages/AccountSettingsPage/AccountSettings';
 import SignUpPage from './Components/Pages/SignUpPage/SignUpPage';
 import ContactUsPage from './Components/Pages/ContactUsPage/ContactUsPage';
 import PrivacyPolicyPage from './Components/Pages/PrivacyPolicyPage/PrivacyPolicyPage.js';
@@ -79,6 +80,10 @@ export class App extends Component {
               path='/signup'
               component={ SignUpPage }
             />
+            <PublicOnlyRoute
+              path='/accountsettings'
+              component={ AccountSettings }
+            />  
             <Route 
               exact
               path="/contact"
