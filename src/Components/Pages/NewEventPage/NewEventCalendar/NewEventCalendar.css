@@ -1,0 +1,102 @@
+#newEventCalendar {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  position: absolute;
+  width: 100%;
+  min-height: calc(100% - 200px);
+  margin: -20px;
+  padding: 20px;
+}
+
+#newEventCalendarForm {
+  background: white;
+  max-width: 720px;
+  border-radius: 5px;
+}
+
+#newEventCalendarForm fieldset{
+  display: flex;
+  border: none;
+  padding: 20px;
+}
+
+#newEventCalendarHeader {
+  background: var(--dark-orange);
+  border-radius: 5px 5px 0 0;
+  flex-direction: column;
+}
+#newEventCalendarHeader h2 {
+  align-self: center;
+  color: white;
+}
+#newEventCalendarHeader p {
+  color: var(--ternary-orange);
+}
+
+
+
+#newEventCalendarDetails {
+  flex-direction: column;
+  background: #ddd;
+  padding: 0;
+  padding: 10px 20px 10px 20px;
+}
+#newEventCalendarDetails li{
+  list-style-type: none;
+  text-align: left;
+  margin: 10px auto;
+}
+
+#newEventCalendarRange {
+  flex-direction: column;
+}
+#newEventCalendarRange div {
+  margin: 5px auto;
+  width: 100%;
+}
+#newEventClendarRange div label:nth-child(1) {
+  margin-left: 0;
+  text-align: left;
+}
+#newEventCalendarRange div select {
+  padding: 10px 20px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+#newEventCalendarRange a {
+  color: var(--dark-blue);
+  font-weight: bold;
+}
+#newEventCalendarRange a:hover {
+  cursor: pointer;
+  color: var(--primary-blue);
+}
+
+
+
+#newEventCalendarSubmission {
+  background: #ddd;
+  border-radius: 0 0 5px 5px;
+}
+#newEventCalendarSubmission button {
+  background: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#newEventCalendarSubmission button:nth-child(1){
+  background: var(--dark-orange);
+  color: white;
+  font-weight: bold;
+  margin-left: 0;
+}
+#newEventCalendarSubmission button:nth-child(2){
+  margin-right: 0;
+}
+#newEventCalendarSubmission button:hover {
+  background: #eee;
+}
+#newEventCalendarSubmission button:disabled {
+  background: #aaa;
+}

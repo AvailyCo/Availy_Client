@@ -1,0 +1,119 @@
+#newEventPage {
+  background: #eee;
+  min-height: calc(100vh - 200px);
+  padding: 20px;
+}
+
+#newEventCreateForm {
+  background: white;
+  border-radius: 5px;
+  max-width: 720px;
+}
+
+#newEventCreateForm fieldset{
+  display: flex;
+  border: none;
+  padding: 20px;
+}
+
+#newEventHeader {
+  background: var(--dark-orange);
+  border-radius: 5px 5px 0 0;
+}
+#newEventHeader h2{
+  margin-left: 0;
+  color: white;
+  align-self: center;
+}
+#newEventHeader button {
+  border: 2px solid var(--dark-orange);
+  background: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 0;
+  align-self: center;
+}
+#newEventHeader button:hover {
+  cursor: pointer;
+  background: var(--dark-orange);
+  border-color: white;
+  color: white;
+}
+
+#newEventTimezoneSelect {
+  background: #ddd;
+}
+#newEventTimezoneSelect label {
+  margin-left: 0;
+  align-self: center;
+}
+#newEventTimezoneSelect select {
+  margin-right: 0;
+  padding: 10px 20px;
+  align-self: center;
+  border-radius: 5px;
+  border: none;
+}
+
+#newEventDetails {
+  flex-direction: column;
+}
+#newEventDetails div {
+  width: 100%;
+  padding: 10px 0;
+}
+#newEventDetails label {
+  display: block;
+  text-align: left;
+  margin: 0 0 5px 0px;
+}
+#newEventDetails input, #newEventDetails textarea {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  text-align: left;
+}
+#newEventDetails textarea {
+  min-height: 100px;
+}
+#newEventDetails button {
+  width: 100%;
+  padding: 10px 20px;
+  background: var(--dark-blue);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+
+#newEventSubmission {
+  background: #ddd;
+  border-radius: 0 0 5px 5px;
+}
+#newEventSubmission button {
+  background: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#newEventSubmission button:nth-child(1){
+  background: var(--dark-orange);
+  color: white;
+  font-weight: bold;
+  margin-left: 0;
+}
+#newEventSubmission button:nth-child(2){
+  margin-right: 0;
+}
+#newEventSubmission button:hover {
+  background: #eee;
+}
+#newEventSubmission button:disabled {
+  background: #aaa;
+}
+
+@media only screen and (min-width: 720px){
+
+}
