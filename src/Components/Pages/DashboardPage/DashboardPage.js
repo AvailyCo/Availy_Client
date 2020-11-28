@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './DashboardPage.css';
 import Context from '../../../Context';
 
-import SideNav from './DashNav/DashNav';
+import DashNav from './DashNav/DashNav';
 import ContentDisplay from './ContentDisplay/ContentDisplay';
 
 
@@ -32,7 +32,7 @@ export class DashboardPage extends Component {
   renderMobile(isMobile) {
     return (
       <div className="mobileView">
-        <SideNav
+        <DashNav
           isMobile = { isMobile }
         />
         <ContentDisplay />
@@ -42,7 +42,7 @@ export class DashboardPage extends Component {
   renderDesktop(isMobile) {
     return (
       <div className="desktopView">
-        <SideNav
+        <DashNav
           isMobile = { isMobile }
         />
         <ContentDisplay />

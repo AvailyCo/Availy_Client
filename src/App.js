@@ -19,6 +19,7 @@ import PrivacyPolicyPage from './Components/Pages/PrivacyPolicyPage/PrivacyPolic
 import TermsConditionsPage from './Components/Pages/TermsConditionsPage/TermsConditionsPage';
 import NotFoundPage from './Components/Pages/NotFoundPage/NotFoundPage';
 import DashboardPage from './Components/Pages/DashboardPage/DashboardPage';
+import NewEventPage from './Components/Pages/NewEventPage/NewEventPage';
 
 export class App extends Component {
   state = {
@@ -80,6 +81,11 @@ export class App extends Component {
               exact
               path="/dashboard"
               component={ DashboardPage }
+            />
+            <Route 
+              exact
+              path="/new-event"
+              component={ NewEventPage }
             />
             <PublicOnlyRoute
               path='/login'

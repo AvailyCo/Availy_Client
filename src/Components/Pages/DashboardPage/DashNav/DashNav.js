@@ -93,7 +93,10 @@ export class DashNav extends Component {
     return(
       <div id="dashNav">
         <h3>Dashboard</h3>
-        <button id="newMeetingBtn">New Meeting</button>
+        <Link to="/new-event">
+          <button id="newMeetingBtn">New Event</button>
+        </Link>
+        
         
         { isMobile ? this.renderMobileNav() : this.renderDesktopNav() }
         {/* {this.renderDesktopNav()} */}
