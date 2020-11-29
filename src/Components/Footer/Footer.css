@@ -2,7 +2,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 150px;
+  height: 15vh;
   background: var(--basic-black);
   color: white;
   /* padding: 20px; */
@@ -10,6 +10,9 @@
 
 .footerBrand {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 30%;
 }
 
 #footerIcon {
@@ -20,7 +23,7 @@
 
 #footerLogo {
   align-self: center;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   color: var(--dark-orange);
 }
 
@@ -34,15 +37,14 @@
 #additional li {
   list-style-type: none;
 }
-#additional li a p{
+#additional li a p {
   font-weight: bold;
   text-decoration: none;
   color: var(--dark-blue);
 }
 #additional li a p:hover {
-  color: var(--primary-blue); 
+  color: var(--primary-blue);
 }
-
 
 @media only screen and (min-width: 720px) {
   #additional {

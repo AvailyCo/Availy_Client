@@ -13,9 +13,12 @@
   color: var(--basic-black);
   margin-bottom: 20px;
 }
+
 .textSegment .text-seg-info {
-  line-height: 1.3rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
 }
+
 .textSegment a {
   background: var(--dark-blue);
   border: none;
@@ -36,10 +39,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
+  margin: 2rem auto;
 }
 
 @media only screen and (min-width: 720px) {
-  .landingDetails {
+  /*  .landingDetails {
     flex-direction: row;
   }
   .textSegment {
@@ -57,11 +61,11 @@
     margin-bottom: 20px;
   }
   .landingImg {
-    /* background-color: black; */
+    /* background-color: black; */ /*
     height: 250px;
     max-width: 50%;
     align-self: center;
-  }
+  } */
 }
 
 /*phones shorter than iphone*/

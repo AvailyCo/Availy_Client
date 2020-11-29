@@ -24,7 +24,7 @@ export class Hero extends Component {
           <h3 className="text-seg-header">
             {info.header}
           </h3>
-          <p className="text-seg-info">
+          <p className="text-seg-info" >
             {info.details}
           </p>
           <br />

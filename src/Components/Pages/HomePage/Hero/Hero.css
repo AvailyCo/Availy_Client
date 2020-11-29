@@ -12,6 +12,11 @@
   max-width: 100%;
 }
 
+#hero .textSegment .text-seg-info {
+  line-height: 1.3rem;
+  font-size: 1rem;
+}
+
 #hero-image-section {
   margin-top: 1.5rem;
 }
@@ -58,10 +63,12 @@
   }
 }
 
-#step1 {
-  min-height: 92vh;
-  border: 1px solid black;
-  padding-top: 8vh;
+#step1,
+#step2,
+#step3,
+#step4 {
+  min-height: 100vh;
+  padding-top: 5rem;
 }
 
 /*phones shorter than iphone*/
@@ -92,7 +99,7 @@
   }
 }
 
-/* @media only screen and (min-width: 720px) {
+@media only screen and (min-width: 720px) {
   #hero {
     height: 100vh;
     position: relative;
@@ -103,4 +110,94 @@
     height: 300px;
     align-self: center;
   }
-} */
+
+  #hero {
+    border: 1px solid black;
+    min-height: 60vh;
+    padding: 0;
+  }
+
+  #hero .textSegment {
+    border: none;
+    height: 10vh;
+  }
+
+  #hill-image {
+    height: 50vh;
+  }
+
+  /*
+
+  #hill-image {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+#hero {
+  min-height: 92vh;
+  padding-top: 2rem;
+}
+
+#heroImg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+}
+
+#hero .textSegment .text-seg-info {
+  line-height: 1.3rem;
+  font-size: 1rem;
+}
+
+#hero-image-section {
+  margin-top: 1.5rem;
+}
+
+.calendar-box {
+  margin-top: 1rem;
+  width: 60%;
+  z-index: 2;
+}
+
+
+
+#people {
+  z-index: 3;
+  position: absolute;
+  bottom: 2rem;
+  transform: translateX(-45%);
+}
+
+#minutearm {
+  animation: clockhand 5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: 0% 100%;
+}
+
+#hourarm {
+  animation: clockhand 10s infinite linear;
+  transform-box: fill-box;
+  transform-origin: 1;
+}
+
+@keyframes clockhand {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#step1,
+#step2,
+#step3,
+#step4 {
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+*/
+}

@@ -3,15 +3,15 @@
   background: var(--secondary-orange);
   padding: 0;
   position: relative;
-  /* padding-bottom: 100%; */
   vertical-align: middle;
   overflow: hidden;
   display: inline-block;
   z-index: 0;
+  padding-top: 5rem;
 }
 
 #successStories h3 {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-size: 1.75rem;
   color: var(--basic-black);
   margin: 20px auto;
@@ -20,8 +20,7 @@
   padding: 0;
 }
 
-
-@media only screen and (min-width: 720px){
+@media only screen and (min-width: 720px) {
   #successStories ul {
     display: flex;
     padding: 20px;
