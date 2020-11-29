@@ -1,15 +1,11 @@
-
-
-
-
 @media only screen and (min-width: 720px) {
   #landingSection section {
-    padding: 50px;
     display: flex;
+    width: 100%;
   }
   #landingSection section:nth-child(even) {
     flex-direction: row-reverse;
-  } 
+  }
   #landingSection section .textSegment {
     max-width: 50%;
   }

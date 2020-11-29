@@ -34,7 +34,6 @@
 }
 
 .landingImg {
-  /* background-color: black; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,29 +42,30 @@
 }
 
 @media only screen and (min-width: 720px) {
-  /*  .landingDetails {
+  .landingDetails {
     flex-direction: row;
   }
-  .textSegment {
-    align-self: center;
-    padding: none;
-    min-width: 50%;
-    border: 2px dashed var(--secondary-blue);
-    border-radius: 20px;
+
+  .landingDetails .textSegment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .textSegment .text-seg-header {
-    font-family: "Pacifico", cursive;
-    font-weight: lighter;
-    font-size: 2em;
-    color: var(--basic-black);
-    margin-bottom: 20px;
+
+  .landingDetails .textSegment .text-seg-header {
+    font-size: 1.4rem;
   }
+
+  .landingDetails .textSegment .text-seg-info {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .landingImg {
-    /* background-color: black; */ /*
-    height: 250px;
-    max-width: 50%;
-    align-self: center;
-  } */
+    width: 60%;
+    object-fit: contain;
+  }
 }
 
 /*phones shorter than iphone*/

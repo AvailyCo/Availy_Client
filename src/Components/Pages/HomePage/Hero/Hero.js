@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import hill from '../../../../Assets/orangehill.png';
-import people from '../../../../Assets/people.png';
 import { ReactComponent as CalendarImage } from '../../../../Assets/calendar.svg';
+import PeopleImage from '../../../../Assets/people.svg';
 
 import './Hero.css';
 
@@ -43,7 +43,7 @@ export class Hero extends Component {
             <CalendarImage />
           </div>
           <img id="hill-image" src={hill} alt="" />
-          <img id="people" src={people} alt="" />
+          <img id="people-image" src={PeopleImage} alt="" />
 
         </div>
 
