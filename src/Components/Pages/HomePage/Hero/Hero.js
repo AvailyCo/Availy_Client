@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import hill from '../../../../Assets/orangehill.png';
+import people from '../../../../Assets/people.png';
+import { ReactComponent as CalendarImage } from '../../../../Assets/calendar.svg';
 
 import './Hero.css';
 
@@ -30,10 +33,21 @@ export class Hero extends Component {
             Get Started
           </a>
         </div>
-        <img
-          id="heroImg"
-          src={info.imgURL}
-        />
+        <div id="hero-image-section">
+          {/* <img
+            id="heroImg"
+            src={info.imgURL}
+            alt=""
+          /> */}
+          <div className="calendar-box">
+            <CalendarImage />
+          </div>
+          <img id="hill-image" src={hill} alt="" />
+          <img id="people" src={people} alt="" />
+
+        </div>
+
+
         {/* <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
           <defs>
             <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%"> 

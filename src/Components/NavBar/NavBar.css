@@ -1,14 +1,36 @@
 #navBar {
-  height: 50px;
+  height: 8vh;
   position: sticky;
   top: 0;
   background: white;
-  padding: 0 20px;
+  padding: 0 1rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   /* box-shadow: 0px -20px 30px 50px white; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 99;
+  width: 100%;
 }
+
+.burger {
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+}
+
+.burger span {
+  padding: 0.1rem 0.9rem;
+  background: var(--basic-black);
+  margin: 0.3rem 0rem;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+/* #accessAcct {
+  display: none;
+} */
+
 .fade {
   box-shadow: 0px -20px 30px 50px white;
 }
@@ -28,33 +50,100 @@
 }
 
 #navLogo {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   color: var(--dark-orange);
 }
 
-#navBar #accessAcct {
-  align-self: center;
-  display: flex;
-  margin-right: 0;
+/*nav bar mini menu*/
+.links-box {
+  display: none;
+  position: fixed;
+  height: 10vh;
+  width: 60%;
+  top: 3.5rem;
+  right: 1rem;
+  background: white;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  align-items: center;
 }
-#navBar #accessAcct a {
-  margin: 0 0 0 20px;
-  color: var(--dark-blue);
+
+.flexshow {
+  display: flex;
+}
+
+/*Login links*/
+#accessAcct {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#accessAcct a {
+  color: var(--basic-black);
   font-weight: bold;
   text-decoration: none;
-  align-self: center;
 }
+
+#accessAcct #signUp {
+  background: var(--dark-blue);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+#accessAcct #signUp:hover {
+  cursor: pointer;
+  background: var(--primary-blue);
+}
+
+#accessAcct #login {
+  background: white;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #d6d6d6;
+}
+
 #navBar #accessAcct #login:hover {
   cursor: pointer;
   color: var(--primary-blue);
 }
-#navBar #accessAcct #signUp {
-  background: var(--dark-blue);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
+
+.toggle .line2 {
+  opacity: 0;
 }
-#navBar #accessAcct #signUp:hover {
-  cursor: pointer;
-  background: var(--primary-blue);
+
+.toggle .line1 {
+  transform: rotateZ(45deg) translateY(360%);
+  background: black;
+}
+
+.toggle .line3 {
+  transform: rotateZ(-45deg) translateY(-360%);
+  background: black;
+}
+
+/*phones shorter than iphone*/
+@media only screen and (max-width: 400px) and (max-height: 775px) {
+  .links-box {
+    right: 1rem;
+  }
+
+  #accessAcct {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+
+  #accessAcct #login,
+  #accessAcct #signUp {
+    padding: 0.5rem 1.1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .burger {
+    display: none;
+  }
 }

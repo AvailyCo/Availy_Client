@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Pacifico&display=swap");
 
 :root {
-  --dark-orange: #FF6750;
+  --dark-orange: #ff6750;
   --primary-orange: rgb(255, 115, 88);
   --secondary-orange: rgb(255, 162, 98);
   --ternary-orange: #ffda88;
-  
-  --dark-blue: #1B9DA7;
+
+  --dark-blue: #1b9da7;
   --primary-blue: #42d8e4;
   --secondary-blue: #8ae3ff;
   --ternary-blue: #f0ffff;
@@ -16,11 +16,12 @@
 }
 
 * {
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
   box-sizing: border-box;
   text-align: center;
   margin: 0 auto;
   color: var(--basic-black);
+  scroll-behavior: smooth;
 }
 
 a {
