@@ -1,6 +1,9 @@
 import landing0 from './Assets/Landing0.png';
 import landing1 from './Assets/Landing1.png';
 import landing2 from './Assets/Landing2.png';
+
+import Landing2 from './Assets/landing2.svg';
+
 import landing3 from './Assets/Landing3.png';
 import landing4 from './Assets/Landing4.png';
 import landing5 from './Assets/Landing5.png';
@@ -15,7 +18,7 @@ export default {
     "details": "Having trouble coordinating events with your friends? Availy can help! We sort through the schedules of multiple users to present you with the best times and dates to get your people together.",
     "imgURL": landing0
   },
-  "landingDetails":[
+  "landingDetails": [
     {
       "id": 1,
       "header": "Step 1: Build your Agenda",
@@ -26,7 +29,7 @@ export default {
       "id": 2,
       "header": "Step 2: Invite your friends",
       "details": "If your friends haven't signed up yet, don't worry - everyone is invited! With Availy, you can send invites via email, collect user's scheduling data, and continue to plan get-togethers with the utmost efficiency. You can also group your contacts together and invite everyone all at once!",
-      "imgURL": landing2
+      "imgURL": /* landing2 */ Landing2
     },
     {
       "id": 3,
