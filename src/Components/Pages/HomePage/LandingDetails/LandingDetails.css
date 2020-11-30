@@ -41,10 +41,6 @@
   margin: 2rem auto;
 }
 
-#step2 .landingImg {
-  padding: 3rem;
-}
-
 /*Landing 2 animations*/
 #bluebox1 {
   opacity: 0;
@@ -116,6 +112,10 @@
   .landingImg {
     width: 60%;
     object-fit: contain;
+  }
+
+  #step2 .landingImg {
+    padding: 3rem;
   }
 }
 
