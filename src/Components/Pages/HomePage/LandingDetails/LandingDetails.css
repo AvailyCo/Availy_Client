@@ -98,6 +98,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px dashed var(--secondary-blue);
+    border-radius: 20px;
+
+    margin: auto 2rem;
   }
 
   .landingDetails .textSegment .text-seg-header {
@@ -110,7 +114,7 @@
   }
 
   .landingImg {
-    width: 60%;
+    width: 55%;
     object-fit: contain;
   }
 
