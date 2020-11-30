@@ -5,7 +5,7 @@ import './NavBar.css';
 import Context from '../../Context';
 
 import logo from './../../Assets/Availy_Logo1.png';
-import TokenService from '../../Services/token-service';
+//import TokenService from '../../Services/token-service';
 
 export class NavBar extends Component {
   static contextType = Context;

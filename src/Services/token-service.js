@@ -2,7 +2,7 @@ import jwtDecode from 'jwt-decode';
 import config from '../Config';
 
 let _timeoutId;
-const _SECOND_TIMER_IN_MS = 5 * 60 * 1000; // 10 seconds // desired_seconds * seconds_per_miliseconds
+//const _SECOND_TIMER_IN_MS = 5 * 60 * 1000; // 10 seconds // desired_seconds * seconds_per_miliseconds
 
 const TokenService = {
   saveAuthToken(token) {
@@ -36,9 +36,7 @@ const TokenService = {
   },
   queueCallbackBeforeExpiry(callback) {
     // get the number of ms from now until the token expires
-    const msUntilExpiry = TokenService._getMsUntilExpiry(
-      TokenService.readJwtToken()
-    );
+    //const msUntilExpiry = TokenService._getMsUntilExpiry(TokenService.readJwtToken());
     /*
       queue a callback that will happen 10 seconds before the token expires
       the callback is passed in as an argument so could be anything,

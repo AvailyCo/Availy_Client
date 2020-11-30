@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router';
 
 import './App.css';
-import Config from './Config';
+//import Config from './Config';
 import SAMPLE from './SAMPLE';
 import Context from './Context';
-import PrivateRoute from './Utils/PrivateRoute';
+//import PrivateRoute from './Utils/PrivateRoute';
 import PublicOnlyRoute from './Utils/PublicOnlyRoute';
 
 import NavBar from './Components/NavBar/NavBar';
@@ -59,7 +59,7 @@ export class App extends Component {
     });
   }
 
-  render () {
+  render() {
     const contextValue = {
       hero: this.state.hero,
       loggedIn: this.state.loggedIn,
@@ -71,7 +71,7 @@ export class App extends Component {
     }
     return (
       <Context.Provider
-        value={ contextValue }
+        value={contextValue}
       >
         <main id="App">
           <NavBar />
@@ -80,47 +80,47 @@ export class App extends Component {
             <Route  // <-- change to private route when auth set up
               exact
               path="/dashboard"
-              component={ DashboardPage }
+              component={DashboardPage}
             />
-            <Route 
+            <Route
               exact
               path="/new-event"
-              component={ NewEventPage }
+              component={NewEventPage}
             />
             <PublicOnlyRoute
               path='/login'
-              component={ LoginPage }
+              component={LoginPage}
             />
             <PublicOnlyRoute
               path='/signup'
-              component={ SignUpPage }
+              component={SignUpPage}
             />
             <PublicOnlyRoute
               path='/accountsettings'
-              component={ AccountSettings }
-            />  
-            <Route 
+              component={AccountSettings}
+            />
+            <Route
               exact
               path="/contact"
-              component={ ContactUsPage }
+              component={ContactUsPage}
             />
-            <Route 
+            <Route
               exact
               path="/privacy"
-              component={ PrivacyPolicyPage }
+              component={PrivacyPolicyPage}
             />
-            <Route 
+            <Route
               exact
               path="/terms"
-              component={ TermsConditionsPage }
+              component={TermsConditionsPage}
             />
             <Route
               exact
               path="/"
-              component={ HomePage }
+              component={HomePage}
             />
             <Route
-              component={ NotFoundPage }
+              component={NotFoundPage}
             />
           </Switch>
 

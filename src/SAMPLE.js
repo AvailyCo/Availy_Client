@@ -1,10 +1,11 @@
+/* eslint-disable import/no-anonymous-default-export */
 import landing0 from './Assets/Landing0.png';
 import landing1 from './Assets/Landing1.png';
-import landing2 from './Assets/Landing2.png';
+//import landing2 from './Assets/Landing2.png';
 
 import Landing2 from './Assets/landing2.svg';
 
-import landing3 from './Assets/Landing3.png';
+//import landing3 from './Assets/Landing3.png';
 import landing4 from './Assets/Landing4.png';
 import landing5 from './Assets/Landing5.png';
 

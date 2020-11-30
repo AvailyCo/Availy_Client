@@ -10,7 +10,7 @@ export class UserStory extends Component {
       desc: "",
     }
   }
-  
+
   render() {
     const story = this.props.story;
 
@@ -19,6 +19,7 @@ export class UserStory extends Component {
         <img
           src={story.imgURL}
           className="successImg"
+          alt="user story"
         />
         <blockquote>{story.desc}</blockquote>
         <cite>{story.name}</cite>

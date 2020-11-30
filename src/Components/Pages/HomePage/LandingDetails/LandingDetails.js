@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './LandingDetails.css';
 
-import { ReactComponent as Landing2 } from '../../../../Assets/landing2.svg';
+//import { ReactComponent as Landing2 } from '../../../../Assets/landing2.svg';
 /* import { ReactComponent as Landing2 } from './Assets/landing2.svg';
 import { ReactComponent as Landing2 } from './Assets/landing2.svg';
  */
@@ -20,7 +20,6 @@ export class LandingDetails extends Component {
 
   render() {
     const info = this.props.info;
-    let landingimage = `<{info.imgURL} />`;
 
     return (
       <section id={"step" + info.id} className="landingDetails">
