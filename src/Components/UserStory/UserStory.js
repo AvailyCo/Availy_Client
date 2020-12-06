@@ -1,16 +1,7 @@
 import React, { Component } from 'react';
-
 import './UserStory.css';
 
 export class UserStory extends Component {
-  static defaultProps = {
-    story: {
-      name: "",
-      imgURL: "",
-      desc: "",
-    }
-  }
-
   render() {
     const story = this.props.story;
 
@@ -19,7 +10,7 @@ export class UserStory extends Component {
         <img
           src={story.imgURL}
           className="successImg"
-          alt="user story"
+          alt="user story pic"
         />
         <blockquote>{story.desc}</blockquote>
         <cite>{story.name}</cite>
@@ -28,4 +19,4 @@ export class UserStory extends Component {
   }
 }
 
-export default UserStory
+export default UserStory;

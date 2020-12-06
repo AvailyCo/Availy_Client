@@ -1,0 +1,87 @@
+.userStory {
+  list-style-type: none;
+  margin: 2rem;
+}
+
+.successImg {
+  width: 12rem;
+  height: 12rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.userStory blockquote {
+  font-family: "Arimo", sans-serif;
+  margin: 0.5rem;
+  padding: 1rem 1rem;
+  position: relative;
+  font-style: italic;
+}
+
+blockquote:before {
+  font-family: "Pacifico", cursive;
+  position: absolute;
+  font-size: 2rem;
+  top: 0;
+  left: 0;
+  content: "\201C";
+}
+
+blockquote:after {
+  font-family: "Pacifico", cursive;
+  position: absolute;
+  font-size: 2rem;
+  content: "\201D";
+  margin-left: 0.5rem;
+  line-height: 1;
+}
+
+cite:before {
+  content: "\2013\ ";
+}
+
+@media only screen and (min-width: 600px) {
+  .userStory {
+    margin: 1rem;
+  }
+
+  .successImg {
+    width: 75%;
+    height: 75%;
+  }
+
+  .userStory blockquote {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  blockquote:before {
+    content: none;
+  }
+
+  blockquote:after {
+    content: none;
+  }
+
+  .userStory cite {
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .successImg {
+    width: 45%;
+    height: 45%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .successImg {
+    width: 30%;
+    height: 30%;
+  }
+
+  .userStory blockquote {
+    margin: 1rem 2rem;
+  }
+}

@@ -3,14 +3,13 @@ import { Route, Switch } from 'react-router';
 
 import './App.css';
 //import Config from './Config';
-import SAMPLE from './SAMPLE';
+/* import SAMPLE from './SAMPLE'; */
 import Context from './Context';
 //import PrivateRoute from './Utils/PrivateRoute';
 import PublicOnlyRoute from './Utils/PublicOnlyRoute';
 
 import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/Footer';
-import HomePage from './Components/Pages/HomePage/HomePage';
 import LoginPage from './Components/Pages/LoginPage/LoginPage';
 import AccountSettings from './Components/Pages/AccountSettingsPage/AccountSettings';
 import SignUpPage from './Components/Pages/SignUpPage/SignUpPage';
@@ -21,22 +20,24 @@ import NotFoundPage from './Components/Pages/NotFoundPage/NotFoundPage';
 import DashboardPage from './Components/Pages/DashboardPage/DashboardPage';
 import NewEventPage from './Components/Pages/NewEventPage/NewEventPage';
 
+import LandingPage from './Routes/LandingPage/LandingPage';
+
 export class App extends Component {
   state = {
-    hero: {},
+    /*  hero: {}, */
     loggedIn: false,
-    landingDetails: [],
-    successStories: [],
+    /*     landingDetails: [],
+        successStories: [], */
     activeDashPage: "",
   }
 
   componentDidMount() {
-    const hero = SAMPLE.hero;
+    /* const hero = SAMPLE.hero;
     this.setState({
       hero
     });
-
-    const landingDetails = SAMPLE.landingDetails;
+ */
+    /* const landingDetails = SAMPLE.landingDetails;
     this.setState({
       landingDetails
     });
@@ -44,7 +45,7 @@ export class App extends Component {
     const successStories = SAMPLE.successStories;
     this.setState({
       successStories
-    });
+    }); */
   }
 
   login = () => {
@@ -61,22 +62,21 @@ export class App extends Component {
 
   render() {
     const contextValue = {
-      hero: this.state.hero,
-      loggedIn: this.state.loggedIn,
+      //hero: this.state.hero,
+      //loggedIn: this.state.loggedIn,
       login: this.login,
-      landingDetails: this.state.landingDetails,
-      successStories: this.state.successStories,
+      //landingDetails: this.state.landingDetails,
+      //successStories: this.state.successStories,
       activeDashPage: this.state.activeDashPage,
       setActiveDashPage: this.setActiveDashPage,
     }
     return (
-      <Context.Provider
-        value={contextValue}
-      >
-        <main id="App">
+      <Context.Provider value={contextValue}>
+
+        <main>
           <NavBar />
 
-          <Switch id="content">
+          <Switch /* id="content" */>
             <Route  // <-- change to private route when auth set up
               exact
               path="/dashboard"
@@ -114,14 +114,12 @@ export class App extends Component {
               path="/terms"
               component={TermsConditionsPage}
             />
-            <Route
-              exact
-              path="/"
-              component={HomePage}
-            />
-            <Route
-              component={NotFoundPage}
-            />
+
+
+            <Route exact path="/" component={LandingPage} />
+
+
+            <Route path='*' component={NotFoundPage} />
           </Switch>
 
           <Footer />
