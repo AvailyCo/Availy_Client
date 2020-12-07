@@ -37,7 +37,7 @@ button:hover {
 main {
   position: relative;
   min-height: 100vh;
-  padding-bottom: 6rem;
+  padding-bottom: 12vh;
   text-align: center;
 }
 
@@ -45,14 +45,8 @@ main {
   display: none;
 }
 
-@media only screen and (min-width: 600px) {
-  main {
-    padding-bottom: 8rem;
-  }
-}
-
 @media only screen and (min-width: 1200px) {
   main {
-    padding-bottom: 5rem;
+    padding-bottom: 10vh;
   }
 }

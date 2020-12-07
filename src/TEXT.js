@@ -13,11 +13,22 @@ import user1 from './Assets/User1.jpg';
 import user2 from './Assets/User2.jpg';
 import user3 from './Assets/User3.jpeg';
 
+
+
+
+
 export const HeroText = {
   "heading": "Find a time that works for all",
-  "details": "Having trouble coordinating events with your friends? Availy can help! We sort through the schedules of multiple users to present you with the best times and dates to get your people together.",
-  /* "imgURL": landing0 */
+  "details": "Having trouble coordinating events with your friends? Availy can help! We sort through the schedules of multiple users to present you with the best times and dates to get your people together."
 }
+
+
+
+
+
+
+
+
 
 export const LandingSectionText = [
   {

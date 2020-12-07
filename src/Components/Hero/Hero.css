@@ -1,0 +1,88 @@
+#HeroContent {
+  min-height: 92vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 1rem;
+  scroll-snap-align: end;
+}
+
+#hill-image {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 50%;
+  z-index: -100;
+  object-fit: cover;
+}
+
+#HeroBox {
+  display: flex;
+  flex-direction: column;
+}
+
+#HeroContent h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: lighter;
+  font-size: 1.3em;
+  color: var(--basic-black);
+  margin: 0.5rem auto;
+  width: 90%;
+}
+
+#AvailyDescriptionBox p {
+  line-height: 1.2rem;
+  font-size: 0.7rem;
+  margin: 0.5rem auto;
+  width: 80%;
+}
+
+.calendar-box {
+  width: 52%;
+  margin: 1.5rem auto 0;
+  z-index: 1;
+}
+
+#people-image {
+  width: 50%;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+#minutearm {
+  animation: clockhand 5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: 0% 100%;
+}
+
+#hourarm {
+  animation: clockhand 10s infinite linear;
+  transform-box: fill-box;
+  transform-origin: 1;
+}
+
+@keyframes clockhand {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@media only screen and (min-width: 300px) and (min-height: 625px) {
+  #AvailyDescriptionBox p {
+    line-height: 1.3rem;
+    font-size: 0.8rem;
+    margin: 1rem auto;
+  }
+
+  .calendar-box {
+    width: 50%;
+    margin: 1rem auto 0;
+  }
+
+  #people-image {
+    width: 55%;
+  }
+}

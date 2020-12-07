@@ -3,7 +3,7 @@ footer {
   background: var(--basic-black);
   bottom: 0;
   width: 100%;
-  height: 6rem;
+  height: 12vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,25 +54,42 @@ footer {
 
 @media only screen and (min-width: 600px) {
   footer {
-    height: 8rem;
+    height: 12vh;
+  }
+
+  .footerBrand {
+    margin: 0.7rem auto;
   }
 
   #footerLinksBox {
-    width: 60%;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto 0.5rem;
   }
 
   #footerLinksBox li a p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
+    margin: 0 2rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   footer {
-    height: 5rem;
+    height: 10vh;
+  }
+
+  .footerBrand {
+    margin-top: 0.3rem;
   }
 
   #footerLinksBox {
-    width: 50%;
+    padding-bottom: 0;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+  }
+
+  #footerLinksBox li a p {
+    font-size: 0.5rem;
   }
 }

@@ -1,5 +1,5 @@
 nav {
-  height: 3.3rem;
+  height: 8vh;
   position: sticky;
   top: 0;
   background: white;
@@ -41,26 +41,28 @@ nav {
   list-style-type: none;
   text-align: right;
   margin: 0;
+}
 
-  position: absolute;
-  right: 0.5rem;
-  top: 3rem;
-  border: 1px solid #d6d6d6;
-  border-radius: 5px;
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
-  padding: 1rem 0.6rem;
-  justify-content: space-around;
+#navLinksBoxLoggedIn {
+  background: white;
   width: 50%;
-  align-items: center;
+  list-style-type: none;
+  flex-direction: column;
 }
 
 .navbutton {
   border-radius: 5px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
   cursor: pointer;
   color: var(--basic-black);
   font-size: 0.8rem;
   font-weight: bold;
+}
+
+.auth {
+  display: block;
+  margin: 0.5rem auto;
+  font-size: 1.1rem;
 }
 
 .signUpButton {
@@ -108,14 +110,113 @@ nav {
 
 .show {
   display: flex;
+  position: absolute;
+  right: 0.5rem;
+  top: 3rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  padding: 1rem 0.6rem;
+  justify-content: space-around;
+  width: 55%;
+  align-items: center;
 }
 
 .hide {
   display: none;
 }
 
+.welcomebox {
+  margin: 1rem 0;
+}
+
+.logout {
+  background: red;
+  color: white;
+}
+
 @media only screen and (min-width: 600px) {
-  
+  #burgerIcon {
+    display: none;
+  }
+
+  #navLinksBox {
+    position: relative;
+    display: flex;
+    top: 0;
+    right: 0;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    justify-content: flex-end;
+  }
+
+  .welcomebox {
+    font-size: 0.6rem;
+    color: var(--dark-orange);
+  }
+
+  .username {
+    font-size: 0.6rem;
+    color: var(--dark-blue);
+  }
+
+  #navLinksBoxLoggedIn {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    right: 0;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    justify-content: flex-end;
+    background: none;
+    align-items: center;
+  }
+
+  .loginButton {
+    margin-right: 0.3rem;
+  }
+
+  .loginButton {
+    border: 0;
+  }
+
+  #navLinksBoxLoggedIn .navbutton {
+    padding: 0.25rem 0;
+    margin: 0 0.35rem;
+  }
+
+  #navLinksBoxLoggedIn .navbutton:hover {
+    color: white;
+  }
+
+  .logout {
+    color: red;
+    background: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  nav {
+    height: 2.5rem;
+  }
+
+  #navIcon {
+    width: 1.2rem;
+    height: 1.3rem;
+    margin-right: 0.3rem;
+  }
+
+  #navName {
+    font-size: 1rem;
+  }
+
+  .navbutton {
+    font-size: 0.6rem;
+    padding: 0.4rem 1rem;
+  }
 }
 
 /* .fade {

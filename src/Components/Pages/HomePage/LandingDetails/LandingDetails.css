@@ -6,17 +6,9 @@
   padding: 20px;
   z-index: 9;
 }
-.textSegment .text-seg-header {
-  font-family: "Pacifico", cursive;
-  font-weight: lighter;
-  font-size: 1.5em;
-  color: var(--basic-black);
-  margin-bottom: 20px;
-}
 
 .textSegment .text-seg-info {
-  line-height: 2rem;
-  font-size: 1.2rem;
+  
 }
 
 .textSegment a {
