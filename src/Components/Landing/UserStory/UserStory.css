@@ -1,6 +1,7 @@
 .userStory {
   list-style-type: none;
   margin: 2rem;
+  scroll-snap-align: center;
 }
 
 .successImg {

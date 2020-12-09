@@ -5,11 +5,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* scroll-snap-align: center; */
+  scroll-snap-align: center;
 }
 
 .StepInfoBox {
-  margin: 3rem auto;
+  margin: 0 auto;
   padding: 2rem;
 }
 
@@ -21,10 +21,18 @@
 
 .StepInfoBox p {
   font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.svgStepBox {
+  background: none;
 }
 
 .svgStepBox svg {
-  width: 80%;
+  width: 85%;
+  height: auto;
+  margin: 2rem auto 3rem;
+  z-index: 99;
 }
 
 /*Landing 2 animations*/
@@ -72,4 +80,62 @@
   to {
     transform: rotateZ(-30deg);
   }
+}
+
+@media only screen and (min-width: 800px) {
+  .landingDetails {
+    padding: 2rem;
+  }
+
+  .landingDetails:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .landingDetails:nth-child(even) {
+    flex-direction: row;
+  }
+
+  .StepInfoBox {
+    width: 50%;
+    padding: 3rem;
+  }
+
+  .StepInfoBox p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .svgStepBox {
+    width: 50%;
+  }
+
+  .svgStepBox svg {
+    width: 90%;
+    padding: 1rem;
+  }
+  /*
+    .landingDetails {
+}
+
+.StepInfoBox {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.StepInfoBox h2 {
+  margin-bottom: 1.5rem;
+  font-family: "Pacifico", cursive;
+  font-size: 1.6rem;
+}
+
+.StepInfoBox p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.svgStepBox svg {
+  width: 85%;
+  height: auto;
+  margin: 2rem auto 3rem;
+}*/
 }
