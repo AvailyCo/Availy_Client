@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './SuccessStories.css';
-import { SuccessStoriesText } from '../../TEXT';
+import { SuccessStoriesText } from '../../../TEXT';
 import UserStory from '../UserStory/UserStory';
 
 export class SuccessStories extends Component {

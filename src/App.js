@@ -24,28 +24,11 @@ import LandingPage from './Routes/LandingPage/LandingPage';
 
 export class App extends Component {
   state = {
-    /*  hero: {}, */
     loggedIn: false,
-    /*     landingDetails: [],
-        successStories: [], */
     activeDashPage: "",
   }
 
   componentDidMount() {
-    /* const hero = SAMPLE.hero;
-    this.setState({
-      hero
-    });
- */
-    /* const landingDetails = SAMPLE.landingDetails;
-    this.setState({
-      landingDetails
-    });
-
-    const successStories = SAMPLE.successStories;
-    this.setState({
-      successStories
-    }); */
   }
 
   login = () => {
@@ -62,11 +45,8 @@ export class App extends Component {
 
   render() {
     const contextValue = {
-      //hero: this.state.hero,
-      //loggedIn: this.state.loggedIn,
+      loggedIn: this.state.loggedIn,
       login: this.login,
-      //landingDetails: this.state.landingDetails,
-      //successStories: this.state.successStories,
       activeDashPage: this.state.activeDashPage,
       setActiveDashPage: this.setActiveDashPage,
     }
@@ -116,7 +96,12 @@ export class App extends Component {
             />
 
 
+
+
             <Route exact path="/" component={LandingPage} />
+
+
+
 
 
             <Route path='*' component={NotFoundPage} />

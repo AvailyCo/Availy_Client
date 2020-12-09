@@ -1,0 +1,255 @@
+#HeroContent {
+  min-height: 92vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 0 1rem;
+  scroll-snap-align: end;
+}
+
+#hill-image {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 50%;
+  z-index: -100;
+  object-fit: cover;
+}
+
+#HeroBox {
+  display: flex;
+  flex-direction: column;
+}
+
+#HeroContent h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: lighter;
+  font-size: 1.3em;
+  color: var(--basic-black);
+  margin: 0.5rem auto;
+  width: 90%;
+}
+
+#AvailyDescriptionBox p {
+  line-height: 1.2rem;
+  font-size: 0.7rem;
+  margin: 0.5rem auto 1.5rem;
+  width: 80%;
+}
+
+.getStartedButton {
+  background: var(--dark-blue);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+}
+
+.calendar-box {
+  width: 40%;
+  margin: 1.3rem auto 0;
+  z-index: 1;
+}
+
+#people-image {
+  width: 45%;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+#minutearm {
+  animation: clockhand 5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: 0% 100%;
+}
+
+#hourarm {
+  animation: clockhand 10s infinite linear;
+  transform-box: fill-box;
+  transform-origin: 1;
+}
+
+@keyframes clockhand {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+/*For iphone 10 and longer phones*/
+@media only screen and (min-width: 300px) and (min-height: 725px) {
+  #HeroContent h1 {
+    margin: 1.6rem auto;
+  }
+
+  #AvailyDescriptionBox p {
+    line-height: 1.5rem;
+  }
+
+  #HeroImageBox {
+    margin: 1rem;
+  }
+
+  .calendar-box {
+    width: 50%;
+    margin: 2rem auto 0;
+  }
+
+  #people-image {
+    width: 60%;
+    margin: 0.7rem auto;
+  }
+}
+
+/*Smaller tablets*/
+@media only screen and (min-width: 600px) {
+  #HeroContent {
+    min-height: 95vh;
+  }
+
+  #HeroContent h1 {
+    font-size: 1.7rem;
+  }
+
+  #AvailyDescriptionBox p {
+    line-height: 1.8rem;
+    font-size: 1rem;
+    margin: 1.5em auto;
+  }
+
+  .calendar-box {
+    width: 30%;
+    margin: 1rem auto 0;
+  }
+
+  #people-image {
+    width: 40%;
+    margin: 1rem auto;
+  }
+}
+
+/*Ipads and bigger*/
+@media only screen and (min-width: 600px) and (min-height: 850px) {
+  #HeroContent {
+    min-height: 96vh;
+  }
+
+  #HeroContent h1 {
+    font-size: 1.7rem;
+  }
+
+  #AvailyDescriptionBox p {
+    line-height: 2rem;
+    margin: 2.5rem auto;
+  }
+
+  .calendar-box {
+    width: 35%;
+    margin: 2rem auto 0;
+  }
+
+  #people-image {
+    width: 42%;
+    margin: 1rem auto;
+  }
+}
+
+/*Smaller laptops*/
+@media only screen and (min-width: 800px) {
+  #HeroContent {
+    min-height: 95vh;
+    padding: 0;
+  }
+
+  #hill-image {
+    object-fit: fill;
+  }
+
+  #HeroBox {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 90vh;
+  }
+
+  #AvailyDescriptionBox {
+    width: 50%;
+    margin: 2rem;
+    padding: 3rem auto;
+    border: 2px dashed var(--secondary-blue);
+    border-radius: 20px;
+  }
+
+  .getStartedButton {
+    margin: 2.5rem auto;
+  }
+
+  #HeroImageBox {
+    margin: 3rem auto;
+    width: 50%;
+  }
+
+  .calendar-box {
+    width: 70%;
+    margin: 0 auto;
+    transform: translateX(-1rem);
+  }
+
+  #people-image {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+/*larger laptop screens*/
+@media only screen and (min-width: 1200px) {
+  #HeroContent {
+    margin: 0;
+  }
+
+  #HeroBox {
+    width: 90%;
+    margin: 1rem 0 0 6rem;
+  }
+
+  #HeroContent h1 {
+    font-size: 25px;
+    padding: 0;
+    margin: 30px auto 10px;
+  }
+
+  .getStartedButton {
+    width: 30%;
+    font-size: 14px;
+    margin: 20px auto 30px;
+  }
+
+  #AvailyDescriptionBox {
+    margin: 0 auto 10rem;
+    width: 40%;
+  }
+
+  #AvailyDescriptionBox p {
+    font-size: 12px;
+    line-height: 30px;
+    margin: 10px auto;
+  }
+
+  .calendar-box {
+    width: 250px;
+    margin: 0 auto;
+    transform: translateX(1rem);
+  }
+
+  #people-image {
+    width: 300px;
+    margin: 0 auto;
+    transform: translateX(2rem);
+  }
+}

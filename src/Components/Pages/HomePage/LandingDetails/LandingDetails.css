@@ -33,52 +33,7 @@
   margin: 2rem auto;
 }
 
-/*Landing 2 animations*/
-#bluebox1 {
-  opacity: 0;
-  animation: appear 2s forwards ease-in;
-}
 
-#bluebox2 {
-  opacity: 0;
-  /* animation: appear 2s infinite; */
-  animation: appear 2s forwards ease-in 4s;
-}
-
-#Check1 {
-  opacity: 0;
-  animation: appear 2s forwards ease-in 2s;
-  /* animation: appear 2s infinite; */
-}
-
-#Check2 {
-  opacity: 0;
-  animation: appear 2s forwards ease-in 6s;
-  /* animation: appear 2s infinite; */
-}
-
-#arm {
-  animation: armwave 1s infinite alternate linear;
-  transform-origin: center;
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes armwave {
-  from {
-    transform: rotateZ(30deg);
-  }
-  to {
-    transform: rotateZ(-30deg);
-  }
-}
 
 @media only screen and (min-width: 720px) {
   .landingDetails {

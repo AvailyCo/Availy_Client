@@ -1,11 +1,11 @@
 import React from 'react';
 import './Hero.css';
-import { HeroText } from '../../TEXT';
+import { HeroText } from '../../../TEXT';
 
-import { ReactComponent as CalendarImage } from '../../Assets/calendar.svg';
+import { ReactComponent as CalendarImage } from '../../../Assets/calendar.svg';
 
-import PeopleImage from '../../Assets/people.svg';
-import hill from '../../Assets/orangehill.png';
+import PeopleImage from '../../../Assets/people.svg';
+import hill from '../../../Assets/orangehill.png';
 
 class Hero extends React.Component {
     render() {
@@ -15,6 +15,9 @@ class Hero extends React.Component {
                     <section id="AvailyDescriptionBox">
                         <h1>{HeroText.heading}</h1>
                         <p>{HeroText.details}</p>
+                        <a href="#step1" className="getStartedButton">
+                            Get Started
+                        </a>
                     </section>
 
                     <section id="HeroImageBox">

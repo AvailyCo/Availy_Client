@@ -52,7 +52,7 @@ nav {
 
 .navbutton {
   border-radius: 5px;
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   color: var(--basic-black);
   font-size: 0.8rem;
