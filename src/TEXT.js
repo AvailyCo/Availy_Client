@@ -4,8 +4,6 @@ import { ReactComponent as Landing2 } from './Assets/Landing2.svg';
 import { ReactComponent as Landing3 } from './Assets/Landing3.svg';
 import { ReactComponent as Landing4 } from './Assets/Landing4.svg';
 
-import { ReactComponent as Test1 } from './Assets/text.svg';
-
 import user1 from './Assets/User1.jpg';
 import user2 from './Assets/User2.jpg';
 import user3 from './Assets/User3.jpeg';
@@ -27,21 +25,18 @@ export const LandingSectionText = [
     "header": "Step 2: Invite your friends",
     "details": "If your friends haven't signed up yet, don't worry - everyone is invited! With Availy, you can send invites via email, collect user's scheduling data, and continue to plan get-togethers with the utmost efficiency. You can also group your contacts together and invite everyone all at once!",
     "svgLocation": <Landing2 />,
-    /* "svgLocation": <Test1 /> */
   },
   {
     "id": 3,
     "header": "Step 3: Find times that work",
     "details": "Once everyone has provided their most convenient times to meet, Availy's algorithm will filter through everyone's availability and present you with the most convenient times and days to get all parties together.",
     "svgLocation": <Landing3 />,
-    /* "svgLocation": <Test1 /> */
   },
   {
     "id": 4,
     "header": "Step 4: Create an event",
     "details": "When you plan ahead with Availy, your events' success multiplies exponentially. By conveniently scheduling around others' schedules, you are much more likely to get a higher turn out!",
     "svgLocation": <Landing4 />,
-    /* "svgLocation": <Test1 /> */
   }
 ]
 

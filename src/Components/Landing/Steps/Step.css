@@ -1,6 +1,5 @@
 .landingDetails {
   min-height: 100vh;
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,13 +13,14 @@
 }
 
 .StepInfoBox h2 {
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
   font-family: "Pacifico", cursive;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 .StepInfoBox p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5rem;
 }
 
@@ -35,7 +35,166 @@
   z-index: 99;
 }
 
-/*Landing 2 animations*/
+/*Landing 1 Animations*/
+#Clipboard2,
+#Friend1Pic {
+  opacity: 0;
+  animation: appear 1s linear forwards;
+}
+
+#Clip2Text1 {
+  opacity: 0;
+  animation: appear 1s 2s linear forwards;
+}
+
+#Clip2Text2,
+#Friend2 {
+  opacity: 0;
+  animation: appear 1s 3s linear forwards;
+}
+
+#Clip2Text3,
+#Friend2Info {
+  opacity: 0;
+  animation: appear 1s 4s linear forwards;
+}
+
+#small-arrow {
+  opacity: 0;
+  animation: appear 1s 5s linear forwards;
+}
+
+#Clipboard1 {
+  opacity: 0;
+  animation: appear 2s 6s linear forwards;
+}
+
+#Clip1Text1,
+#Friend3Info {
+  opacity: 0;
+  animation: appear 1s 7s linear forwards;
+}
+
+#Clip1Text2 {
+  opacity: 0;
+  animation: appear 1s 8s linear forwards;
+}
+
+#Clip1Text3 {
+  opacity: 0;
+  animation: appear 1s 9s linear forwards;
+}
+
+#large-arrow {
+  opacity: 0;
+  animation: appear 2s 10s linear forwards;
+}
+
+#AllClipboard3,
+#Clipboard3 {
+  opacity: 0;
+  animation: appear 2s 11s linear forwards;
+}
+
+#leftarm {
+  animation: leftraisearm 2s 7 alternate forwards;
+  transform-origin: 75% 60%;
+}
+
+#rightarm {
+  animation: rightraisearm 2s 1s 7 alternate linear;
+  transform-origin: 80% 65%;
+}
+
+@keyframes leftraisearm {
+  from {
+    transform: rotateZ(50deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes rightraisearm {
+  from {
+    transform: rotateZ(-75deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+/*Landing 2 Animtations*/
+#ManHead {
+  animation: headnod 8s 1.5 alternate ease-in forwards;
+  transform-origin: 25% 45%;
+}
+
+#Friend1Info {
+  opacity: 0;
+  animation: appear 1s 1s linear forwards;
+}
+
+#Friend1Select {
+  opacity: 0;
+  animation: appear 1s 2s linear forwards, goinggreen 2s 9s forwards;
+}
+
+#Friend2Select {
+  opacity: 0;
+  animation: appear 1s 5s linear forwards, goinggreen 2s 10s forwards;
+}
+
+#Friend3 {
+  opacity: 0;
+  animation: appear 1s 6s linear forwards;
+}
+
+#Friend3Select {
+  opacity: 0;
+  animation: appear 1s 8s linear forwards, goinggreen 2s 11s forwards;
+}
+
+@keyframes headnod {
+  from {
+    transform: rotateZ(-20deg);
+  }
+  to {
+    transform: rotateZ(48deg);
+  }
+}
+
+@keyframes goinggreen {
+  from {
+    fill: rgb(255, 218, 136);
+  }
+  to {
+    fill: rgb(113, 202, 113);
+  }
+}
+
+/*Landing 3 Animations*/
+
+/*Landing 4 Animations*/
+
+/* #Bottle3 {
+  animation: bottleshake 1s infinite alternate linear;
+  transform-origin: 80% 68%;
+}
+
+@keyframes bottleshake { */
+/*  from {
+    transform: translateX(3px) rotate(-30deg);
+  } */
+/*   50% {
+    transform: rotateX(0deg);
+  } */
+/* to {
+    transform: translateX(10px) rotate(30deg);
+  }
+ } */
+
+/*Animation Examples*/
 #bluebox1 {
   opacity: 0;
   animation: appear 2s forwards ease-in;
@@ -64,15 +223,6 @@
   transform-origin: center;
 }
 
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes armwave {
   from {
     transform: rotateZ(30deg);
@@ -82,9 +232,20 @@
   }
 }
 
+/*************************************************/
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media only screen and (min-width: 800px) {
   .landingDetails {
-    padding: 2rem;
+    padding: 3rem 4rem;
   }
 
   .landingDetails:nth-child(odd) {
@@ -100,6 +261,10 @@
     padding: 3rem;
   }
 
+  .StepInfoBox h2 {
+    font-size: 2rem;
+  }
+
   .StepInfoBox p {
     font-size: 1.2rem;
     line-height: 2rem;
@@ -113,29 +278,4 @@
     width: 90%;
     padding: 1rem;
   }
-  /*
-    .landingDetails {
-}
-
-.StepInfoBox {
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.StepInfoBox h2 {
-  margin-bottom: 1.5rem;
-  font-family: "Pacifico", cursive;
-  font-size: 1.6rem;
-}
-
-.StepInfoBox p {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.svgStepBox svg {
-  width: 85%;
-  height: auto;
-  margin: 2rem auto 3rem;
-}*/
 }
