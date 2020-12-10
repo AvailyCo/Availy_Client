@@ -15,7 +15,7 @@ class Hero extends React.Component {
                     <section id="AvailyDescriptionBox">
                         <h1>{HeroText.heading}</h1>
                         <p>{HeroText.details}</p>
-                        <a href="#step1" className="getStartedButton">
+                        <a href="#Step1" className="getStartedButton">
                             Get Started
                         </a>
                     </section>

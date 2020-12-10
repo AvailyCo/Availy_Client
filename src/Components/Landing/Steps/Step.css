@@ -169,70 +169,151 @@
     fill: rgb(255, 218, 136);
   }
   to {
-    fill: rgb(113, 202, 113);
+    fill: rgb(212, 233, 212);
   }
 }
 
 /*Landing 3 Animations*/
-
-/*Landing 4 Animations*/
-
-/* #Bottle3 {
-  animation: bottleshake 1s infinite alternate linear;
-  transform-origin: 80% 68%;
-}
-
-@keyframes bottleshake { */
-/*  from {
-    transform: translateX(3px) rotate(-30deg);
-  } */
-/*   50% {
-    transform: rotateX(0deg);
-  } */
-/* to {
-    transform: translateX(10px) rotate(30deg);
-  }
- } */
-
-/*Animation Examples*/
-#bluebox1 {
+#Dot1,
+#Dot7,
+#Dot13 {
   opacity: 0;
-  animation: appear 2s forwards ease-in;
+  animation: appear 1s linear forwards;
 }
 
-#bluebox2 {
+#Dot2,
+#Dot8,
+#Dot14 {
   opacity: 0;
-  /* animation: appear 2s infinite; */
-  animation: appear 2s forwards ease-in 4s;
+  animation: appear 1s 1.3s linear forwards;
 }
 
-#Check1 {
+#Dot3,
+#Dot9,
+#Dot15 {
   opacity: 0;
-  animation: appear 2s forwards ease-in 2s;
-  /* animation: appear 2s infinite; */
+  animation: appear 1s 1.6s linear forwards;
 }
 
-#Check2 {
+#Dot4,
+#Dot10,
+#Dot15_2 {
   opacity: 0;
-  animation: appear 2s forwards ease-in 6s;
-  /* animation: appear 2s infinite; */
+  animation: appear 1s 1.9s linear forwards;
 }
 
-#arm {
-  animation: armwave 1s infinite alternate linear;
-  transform-origin: center;
+#Dot5,
+#Dot11 {
+  opacity: 0;
+  animation: appear 1s 2.1s linear forwards;
 }
 
-@keyframes armwave {
+#Dot6,
+#Dot12 {
+  opacity: 0;
+  animation: appear 1s 2.4s linear forwards;
+}
+
+/* #leftarm {
+  animation: slightraise 3s reverse forwards;
+  transform-box: fill-box;
+} */
+
+#DotPile {
+}
+
+#Day2 {
+  animation: goinggreen 2s 5s forwards;
+}
+
+#Day3No {
+  animation: goingred 2s 6s forwards;
+}
+
+#Day4No {
+  animation: goingred 2s 7s forwards;
+}
+
+#Day5No {
+  animation: goingred 2s 8s forwards;
+}
+
+#Day1 {
+  animation: goinggreen 2s 4s forwards;
+}
+
+@keyframes goingred {
   from {
-    transform: rotateZ(30deg);
+    fill: rgb(255, 218, 136);
   }
   to {
-    transform: rotateZ(-30deg);
+    fill: rgb(240, 179, 179);
   }
 }
 
-/*************************************************/
+/*Landing 4 Animations*/
+#Bottle1,
+#Bottle2,
+#Bottle3,
+#Bottle4 {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: bottleshake infinite alternate linear;
+}
+
+#Bottle1 {
+  animation-duration: 0.8s;
+}
+
+#Bottle2 {
+  animation-duration: 1.4s;
+}
+
+#Bottle3 {
+  animation-duration: 1s;
+}
+
+#Bottle4 {
+  animation-duration: 1.7s;
+}
+
+#ArmWithBottle {
+  animation: slightraise 3s reverse forwards;
+  transform-box: fill-box;
+  transform-origin: 1% 20%;
+}
+
+#WomanLeftArmBlue {
+  transform-box: fill-box;
+  animation: raise 1.5s linear forwards 2s;
+}
+
+@keyframes bottleshake {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes raise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(200deg);
+  }
+}
+
+@keyframes slightraise {
+  from {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
 
 @keyframes appear {
   from {

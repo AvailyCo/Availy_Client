@@ -9,7 +9,7 @@ class Step extends Component {
             <section id="StepsSection">
                 {LandingSectionText.map((stepInfo, index) => {
                     return (
-                        <section id={"Step " + stepInfo.id} key={index} className="landingDetails">
+                        <section id={"Step" + stepInfo.id} key={index} className="landingDetails">
                             <div className="StepInfoBox">
                                 <h2>{stepInfo.header}</h2>
                                 <p>{stepInfo.details}</p>
