@@ -29,7 +29,7 @@ export class LoginPage extends Component {
               <label htmlFor="keepID">Keep me signed in</label>
               <input id="keepID" type="checkbox" name="keepID" />
             </div>
-            <a href="#">Reset Password</a>
+            <button>Reset Password</button>
           </div>
 
           <div className="formButtons">

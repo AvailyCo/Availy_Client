@@ -1,130 +1,131 @@
-* {
-    font-family: arimo, sans-serif;
-}
 #accountSettings {
-    padding: 50px 20px 50px 20px;
-    background-image: linear-gradient(to bottom, var(--primary-orange),var(--secondary-orange));
-    /* min-height: 100vh; */
-    width: 100%;
+  padding: 50px 20px 50px 20px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary-orange),
+    var(--secondary-orange)
+  );
+  /* min-height: 100vh; */
+  width: 100%;
 }
 #accountSettingsform {
-    background: white;
-    width: 100%;
-    max-width: 480px;
-    height: 90%;
-    border-radius: 10px;
-    padding: 20px 50px 50px 50px;
-    position: relative;
+  background: white;
+  width: 100%;
+  max-width: 480px;
+  height: 90%;
+  border-radius: 10px;
+  padding: 20px 50px 50px 50px;
+  position: relative;
 }
 
 .accountSettingSection {
-    border-bottom: solid gray 1px;
-    padding-left: 5%;
+  border-bottom: solid gray 1px;
+  padding-left: 5%;
 }
 
 .editButton {
-    border: solid 1px #1B9DA7;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: white;
-    color: #1B9DA7;
-    margin: 20px;
+  border: solid 1px #1b9da7;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  color: #1b9da7;
+  margin: 20px;
 }
 
 .infoEdit {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .currentInfo {
-    color: gray;
-    align-self: center;
+  color: gray;
+  align-self: center;
 }
 
 #accountSettingDelete {
-    display: flex;
-    flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .deleteAccountButton {
-    border: solid 1px #1B9DA7;
-    color: #1B9DA7;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px;
-    background-color: white;
+  border: solid 1px #1b9da7;
+  color: #1b9da7;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: white;
 }
 
 #userPic {
-    width: 100px;
-    border-radius: 50%;
+  width: 100px;
+  border-radius: 50%;
 }
 
 #accountSettingHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
 }
 
 #changePic {
-    height: 30px;
+  height: 30px;
 }
 
 #changePicButton {
-    border: none;
-    background: transparent;
-    margin-left: -50px;
+  border: none;
+  background: transparent;
+  margin-left: -50px;
 }
 
 .accountSettingUserPic {
-    margin: 10px;
+  margin: 10px;
 }
 
 #facebookIcon {
-    margin: 10px;
-    height: 40px;
+  margin: 10px;
+  height: 40px;
 }
 
 #accountSettingFacebook {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .editSetting {
-    border: solid gray 1px;
-    border-radius: 5px;
-    padding-left: 5%;
-    display: flex;
-    flex-direction: column;
+  border: solid gray 1px;
+  border-radius: 5px;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
 }
 
 .inputLabel {
-    display: block;
+  display: block;
 }
 
 .updateButton {
-    background: #1B9DA7;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
+  background: #1b9da7;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .cancelButton {
-    background: white;
-    color: #1B9DA7; 
-    padding: 5px;
-    border-radius: 5px;
-    border: solid 1px #1B9DA7;
+  background: white;
+  color: #1b9da7;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px #1b9da7;
 }
 
 #yourAccountHeader {
-    padding: 10px;
-    border: none;
+  padding: 10px;
+  border: none;
 }
 
 .accountSettingLabel {
-   display: block;
-   padding: 10px;
-   font-weight: bold;
+  display: block;
+  padding: 10px;
+  font-weight: bold;
 }

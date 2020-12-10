@@ -1,0 +1,29 @@
+#successStories {
+  width: 100%;
+  background: var(--secondary-orange);
+  padding: 2rem 0 2rem 0;
+}
+
+#successStories h3 {
+  font-family: "Pacifico", cursive;
+  color: var(--basic-black);
+  font-size: 1.75rem;
+  margin: 0 auto;
+}
+
+#successStories ul {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  scroll-snap-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  #successStories ul {
+    flex-direction: row;
+    padding: 0;
+  }
+}

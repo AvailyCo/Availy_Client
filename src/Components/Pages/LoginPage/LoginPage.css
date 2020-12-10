@@ -1,8 +1,13 @@
 #logInContent {
   padding: 50px 20px 50px 20px;
-  background-image: linear-gradient(to bottom, var(--primary-orange),var(--secondary-orange));
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary-orange),
+    var(--secondary-orange)
+  );
   /* min-height: 100vh; */
   width: 100%;
+  margin: 0 auto;
 }
 
 #accountForm {
@@ -16,7 +21,7 @@
 }
 
 #accountForm .formHeader {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-size: 1.5em;
   color: var(--basic-black);
   margin: 20px auto;
@@ -36,10 +41,12 @@
 .formAccess div {
   margin: 20px auto;
 }
-.formAccess a {
+.formAccess button {
   margin-right: 0;
   color: var(--dark-blue);
   font-weight: bold;
+  border: none;
+  background: none;
 }
 
 .formButtons {
@@ -63,13 +70,13 @@
   background: var(--primary-blue);
 }
 .formButtons .fbButton {
-  background: #3B5998;
+  background: #3b5998;
 }
 .formButtons .fbButton:hover {
   background: rgb(24, 45, 92);
 }
 .formButtons .googButton {
-  background: #4C8BF5;
+  background: #4c8bf5;
 }
 .formButtons .googButton:hover {
   background: rgb(34, 93, 196);

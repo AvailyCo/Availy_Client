@@ -1,0 +1,362 @@
+.landingDetails {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+}
+
+.StepInfoBox {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.StepInfoBox h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: "Pacifico", cursive;
+  font-size: 1.3rem;
+}
+
+.StepInfoBox p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.svgStepBox {
+  background: none;
+}
+
+.svgStepBox svg {
+  width: 85%;
+  height: auto;
+  margin: 2rem auto 3rem;
+  z-index: 99;
+}
+
+/*Landing 1 Animations*/
+#Clipboard2,
+#Friend1Pic {
+  opacity: 0;
+  animation: appear 1s linear forwards;
+}
+
+#Clip2Text1 {
+  opacity: 0;
+  animation: appear 1s 2s linear forwards;
+}
+
+#Clip2Text2,
+#Friend2 {
+  opacity: 0;
+  animation: appear 1s 3s linear forwards;
+}
+
+#Clip2Text3,
+#Friend2Info {
+  opacity: 0;
+  animation: appear 1s 4s linear forwards;
+}
+
+#small-arrow {
+  opacity: 0;
+  animation: appear 1s 5s linear forwards;
+}
+
+#Clipboard1 {
+  opacity: 0;
+  animation: appear 2s 6s linear forwards;
+}
+
+#Clip1Text1,
+#Friend3Info {
+  opacity: 0;
+  animation: appear 1s 7s linear forwards;
+}
+
+#Clip1Text2 {
+  opacity: 0;
+  animation: appear 1s 8s linear forwards;
+}
+
+#Clip1Text3 {
+  opacity: 0;
+  animation: appear 1s 9s linear forwards;
+}
+
+#large-arrow {
+  opacity: 0;
+  animation: appear 2s 10s linear forwards;
+}
+
+#AllClipboard3,
+#Clipboard3 {
+  opacity: 0;
+  animation: appear 2s 11s linear forwards;
+}
+
+#leftarm {
+  animation: leftraisearm 2s 7 alternate forwards;
+  transform-origin: 75% 60%;
+}
+
+#rightarm {
+  animation: rightraisearm 2s 1s 7 alternate linear;
+  transform-origin: 80% 65%;
+}
+
+@keyframes leftraisearm {
+  from {
+    transform: rotateZ(50deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes rightraisearm {
+  from {
+    transform: rotateZ(-75deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+/*Landing 2 Animtations*/
+#ManHead {
+  animation: headnod 8s 1.5 alternate ease-in forwards;
+  transform-origin: 25% 45%;
+}
+
+#Friend1Info {
+  opacity: 0;
+  animation: appear 1s 1s linear forwards;
+}
+
+#Friend1Select {
+  opacity: 0;
+  animation: appear 1s 2s linear forwards, goinggreen 2s 9s forwards;
+}
+
+#Friend2Select {
+  opacity: 0;
+  animation: appear 1s 5s linear forwards, goinggreen 2s 10s forwards;
+}
+
+#Friend3 {
+  opacity: 0;
+  animation: appear 1s 6s linear forwards;
+}
+
+#Friend3Select {
+  opacity: 0;
+  animation: appear 1s 8s linear forwards, goinggreen 2s 11s forwards;
+}
+
+@keyframes headnod {
+  from {
+    transform: rotateZ(-20deg);
+  }
+  to {
+    transform: rotateZ(48deg);
+  }
+}
+
+@keyframes goinggreen {
+  from {
+    fill: rgb(255, 218, 136);
+  }
+  to {
+    fill: rgb(212, 233, 212);
+  }
+}
+
+/*Landing 3 Animations*/
+#Dot1,
+#Dot7,
+#Dot13 {
+  opacity: 0;
+  animation: appear 1s linear forwards;
+}
+
+#Dot2,
+#Dot8,
+#Dot14 {
+  opacity: 0;
+  animation: appear 1s 1.3s linear forwards;
+}
+
+#Dot3,
+#Dot9,
+#Dot15 {
+  opacity: 0;
+  animation: appear 1s 1.6s linear forwards;
+}
+
+#Dot4,
+#Dot10,
+#Dot15_2 {
+  opacity: 0;
+  animation: appear 1s 1.9s linear forwards;
+}
+
+#Dot5,
+#Dot11 {
+  opacity: 0;
+  animation: appear 1s 2.1s linear forwards;
+}
+
+#Dot6,
+#Dot12 {
+  opacity: 0;
+  animation: appear 1s 2.4s linear forwards;
+}
+
+/* #leftarm {
+  animation: slightraise 3s reverse forwards;
+  transform-box: fill-box;
+} */
+
+#DotPile {
+}
+
+#Day2 {
+  animation: goinggreen 2s 5s forwards;
+}
+
+#Day3No {
+  animation: goingred 2s 6s forwards;
+}
+
+#Day4No {
+  animation: goingred 2s 7s forwards;
+}
+
+#Day5No {
+  animation: goingred 2s 8s forwards;
+}
+
+#Day1 {
+  animation: goinggreen 2s 4s forwards;
+}
+
+@keyframes goingred {
+  from {
+    fill: rgb(255, 218, 136);
+  }
+  to {
+    fill: rgb(240, 179, 179);
+  }
+}
+
+/*Landing 4 Animations*/
+#Bottle1,
+#Bottle2,
+#Bottle3,
+#Bottle4 {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: bottleshake infinite alternate linear;
+}
+
+#Bottle1 {
+  animation-duration: 0.8s;
+}
+
+#Bottle2 {
+  animation-duration: 1.4s;
+}
+
+#Bottle3 {
+  animation-duration: 1s;
+}
+
+#Bottle4 {
+  animation-duration: 1.7s;
+}
+
+#ArmWithBottle {
+  animation: slightraise 3s reverse forwards;
+  transform-box: fill-box;
+  transform-origin: 1% 20%;
+}
+
+#WomanLeftArmBlue {
+  transform-box: fill-box;
+  animation: raise 1.5s linear forwards 2s;
+}
+
+@keyframes bottleshake {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes raise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(200deg);
+  }
+}
+
+@keyframes slightraise {
+  from {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .landingDetails {
+    padding: 3rem 4rem;
+  }
+
+  .landingDetails:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .landingDetails:nth-child(even) {
+    flex-direction: row;
+  }
+
+  .StepInfoBox {
+    width: 50%;
+    padding: 3rem;
+  }
+
+  .StepInfoBox h2 {
+    font-size: 2rem;
+  }
+
+  .StepInfoBox p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .svgStepBox {
+    width: 50%;
+  }
+
+  .svgStepBox svg {
+    width: 90%;
+    padding: 1rem;
+  }
+}

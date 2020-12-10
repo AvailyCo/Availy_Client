@@ -8,20 +8,20 @@ import logo from './../../Assets/Availy_Logo1.png';
 export class Footer extends Component {
   render() {
     return (
-      <footer id="footer">
+      <footer>
         <div className="footerBrand">
           <Link to="/">
             <img
               id="footerIcon"
               src={logo}
-              alt="Availy Icon"  
+              alt="Availy Icon"
             />
           </Link>
           <Link to="/">
-            <h2 id="footerLogo">Availy</h2>
+            <h2 id="footerName">Availy</h2>
           </Link>
         </div>
-        <ul id="additional">
+        <ul id="footerLinksBox">
           <li>
             <Link to="/privacy">
               <p>Privacy Policy</p>
@@ -44,4 +44,3 @@ export class Footer extends Component {
 }
 
 export default Footer;
-
