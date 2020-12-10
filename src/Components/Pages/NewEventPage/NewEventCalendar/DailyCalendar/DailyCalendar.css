@@ -1,0 +1,110 @@
+#dailyCalendar {
+  background: #ddd;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#dailyCalendar header {
+  display: flex;
+  background: var(--primary-blue);
+  border-radius: 5px 5px 0 0;
+}
+#dailyCalendar header button {
+  background: none;
+  height: 50px;
+  width: 50px;
+  border: none;
+}
+#dailyCalendar header button:nth-child(1) {
+  margin-left: 0;
+  border-radius: 5px 0 0 0;
+}
+#dailyCalendar header button:last-child {
+  margin-right: 0;
+  border-radius: 0 5px 0 0;
+}
+#dailyCalendar header button:hover {
+  cursor: pointer;
+  background: var(--dark-blue);
+}
+#dailyCalendar header span {
+  color: white;
+  font-size: 2em;
+  align-self: center;
+}
+
+#dailyCalendar header h3 {
+  align-self: center;
+  color: white;
+}
+
+
+
+
+#dailyCalendar table {
+  width: 100%;
+  background: white;
+}
+#dailyCalendar table tr th {
+  background: #eee;
+  padding: 5px;
+}
+#dailyCalendar table td {
+  border: 1px solid #eee;
+  padding: 5px;
+}
+#dailyCalendar table tr td:nth-child(2) {
+  border-left: 0px;
+  border-right: 0px;
+}
+#dailyCalendar table tr td input[type=checkbox] {
+  -webkit-appearance: none;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+	display: inline-block;
+  position: relative;
+  align-self: center;
+}
+#dailyCalendar table tr td input[type=checkbox]:checked:after {
+  content: '\2714';
+	font-size: 34px;
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  margin-top: -1ch;
+  margin-left: -.5ch;
+	color: var(--primary-blue);
+}
+.timeSlot {
+  display: flex;
+  flex-direction: column;
+}
+.notAvailable {
+  background: var(--soft-black);
+}
+
+
+#eventCalendarFooter {
+  padding: 10px;
+  background: #eee;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: column;
+}
+#eventCalendarFooter input {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+#eventCalendarFooter button {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: var(--dark-blue);
+  color: white;
+}

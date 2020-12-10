@@ -5,7 +5,7 @@ import './MonthlyCalendar.css';
 export class MonthlyCalendar extends Component {
   render() {
     return (
-      <div>
+      <div id="monthlyCalendar">
         Monthly Calendar
       </div>
     )

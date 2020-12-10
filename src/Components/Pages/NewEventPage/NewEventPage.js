@@ -4,10 +4,19 @@ import './NewEventPage.css';
 import NewEventCalendar from './NewEventCalendar/NewEventCalendar';
 
 export class NewEventPage extends Component {
+
+  toggleEventCalendar = (e) => {
+    e.preventDefault();
+
+    document.getElementById("newEventCalendar").toggleAttribute("hidden");
+  }
+
   render() {
     return (
       <div id="newEventPage">
-        <NewEventCalendar  />
+        <NewEventCalendar
+          toggle={this.toggleEventCalendar}
+        />
         <form id="newEventCreateForm">
           <fieldset id="newEventHeader">
             <h2>Plan Event</h2>
@@ -47,7 +56,9 @@ export class NewEventPage extends Component {
               <label htmlFor="newEventMessage">Personal Message</label>
               <textarea id="newEventMessage" name="newEventMessage" />
             </div>
-            <button>Create Event Calendar</button>
+            <button
+              onClick={e => this.toggleEventCalendar(e)}
+            >Create Event Calendar</button>
           </fieldset>
           <fieldset id="newEventSubmission">
             <button>Send Invites</button>

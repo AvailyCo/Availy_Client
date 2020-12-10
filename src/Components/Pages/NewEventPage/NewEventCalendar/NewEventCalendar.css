@@ -12,6 +12,7 @@
   background: white;
   max-width: 720px;
   border-radius: 5px;
+  z-index: 9;
 }
 
 #newEventCalendarForm fieldset{
@@ -59,7 +60,7 @@
   text-align: left;
 }
 #newEventCalendarRange div select {
-  padding: 10px 20px;
+  padding: 5px 10px;
   border: 2px solid #eee;
   border-radius: 5px;
   margin: 0 10px;
@@ -73,7 +74,9 @@
   color: var(--primary-blue);
 }
 
-
+#newEventCalendarPoll {
+  flex-direction: column;
+}
 
 #newEventCalendarSubmission {
   background: #ddd;

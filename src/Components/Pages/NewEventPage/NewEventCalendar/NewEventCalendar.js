@@ -19,10 +19,11 @@ export class NewEventCalendar extends Component {
             <p>by Auth User</p>
           </fieldset>
           <ul id="newEventCalendarDetails">
-            <li><span>Icon: </span>Location Details</li>
-            <li><span>Icon: </span>Description</li>
-            <li><span>Icon: </span>0 out or 10 votes</li>
-            <li><span>Icon: </span>Message: Please select all dates and times that work for you in the event calendar</li>
+            {/* need to troubleshoot loading fontawesome icons */}
+            <li><span className="fas fa-map-marker-alt" /> Location Details</li>
+            <li><span className="fa fa-quote-left" /> Description</li>
+            <li><span className="fas fa-user-friends" /> 0 out or 10 votes</li>
+            <li><span className="fas fa-comment-dots" /> Message: Please select all dates and times that work for you in the event calendar</li>
           </ul>
           <fieldset id="newEventCalendarRange">
             <div>
@@ -76,7 +77,11 @@ export class NewEventCalendar extends Component {
           </fieldset>
           <fieldset id="newEventCalendarSubmission">
             <button>Save</button>
-            <button>Cancel</button>
+            <button
+              onClick={e => this.props.toggle(e)}
+            >
+              Cancel
+            </button>
           </fieldset>
         </form>
       </div>

@@ -20,15 +20,32 @@ export class HomePage extends Component {
           info={hero}
         />
 
-        {landingDetails.map(l => {
-          return (
-            <LandingDetails
-              id={l.id}
-              key={l.id}
-              info={l}
-            />
-          )
-        })}
+        <div>
+          <LandingDetails
+            id={landingDetails[0].id}
+            key={landingDetails[0].id}
+            info={landingDetails[0]}
+          />  
+          <svg />
+        </div>
+
+        <div>
+          <LandingDetails
+            id={landingDetails[1].id}
+            key={landingDetails[1].id}
+            info={landingDetails[1]}
+          />
+          <svg />
+        </div>
+        
+        <div>
+          <LandingDetails
+            id={landingDetails[2].id}
+            key={landingDetails[2].id}
+            info={landingDetails[2]}
+          />  
+          <svg />
+        </div>
 
         <SuccessStories />
       </content>
